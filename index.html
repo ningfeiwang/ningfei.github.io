@@ -1,839 +1,234 @@
-
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 3.1.1">
-  <meta name="generator" content="Hugo 0.51" />
-  <meta name="author" content="Ningfei Wang">
-
-  
-  
-  
-  
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ningfei Wang</title>
     
-  
-  <!-- <meta name="description" content="Site Reliability Engineer"> -->
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <!-- <link rel="stylesheet" href="stylesheets/font-awesome.css"> -->
+    <script src="https://kit.fontawesome.com/3d3a68b80e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <meta name="viewport" content="width=device-width">
 
-  
-  <link rel="alternate" hreflang="en-us" href="https://ningfeiwang.github.io/">
-
-  
-
-
-  
-
-  
-
-  
-
-  
-  
-  
-  <meta name="theme-color" content="#2962ff">
-  
-
-  
-  
-  
-  
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
-
-    
-    
-    
-      
-    
-    
-      
-      
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
-        
-      
-    
-
-    
-
-    
-
-  
-
-  
-  
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
-  
-
-  <link rel="stylesheet" href="/styles.css">
-  
-
-  
-  
-  
-
-  
-  <link rel="alternate" href="https://ningfeiwang.github.io/index.xml" type="application/rss+xml" title="Ningfei Wang&#39;s Home Page">
-  <link rel="feed" href="https://ningfeiwang.github.io/index.xml" type="application/rss+xml" title="Ningfei Wang&#39;s Home Page">
-  
-
-  <link rel="manifest" href="/site.webmanifest">
-  <!-- <link rel="icon" type="image/png" href="/img/icon.png"> -->
-  <!-- <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png"> -->
-
-  <link rel="canonical" href="https://ningfeiwang.github.io/">
-
-  <meta property="twitter:card" content="summary_large_image">
-  
-  <meta property="og:site_name" content="Ningfei Wang&#39;s Home Page">
-  <meta property="og:url" content="https://ningfeiwang.github.io/">
-  <meta property="og:title" content="Ningfei Wang&#39;s Home Page">
-  <meta property="og:description" content="Site Reliability Engineer">
-  
-  
-    
-  <!-- <meta property="og:image" content="https://ningfeiwang.github.io/img/icon-192.png"> -->
-  <meta property="og:locale" content="en-us">
-  
-  <meta property="og:updated_time" content="2017-10-15T00:00:00-07:00">
-  
-
-  
-
-  
-
-  <title>Ningfei Wang&#39;s Home Page</title>
-
-</head>
-<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
-
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
-  <div class="container">
-
-    
-      <a class="navbar-brand" href="/">Ningfei Wang&#39;s Home Page</a>
-      
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fas fa-bars"></i></span>
-      </button>
-      
-
-    
-    <div class="collapse navbar-collapse" id="navbar">
-
-      
-      
-      <ul class="navbar-nav ml-auto">
-        
-
-        
-
-        
-        
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/#about" data-target="#about">
-            
-            <span>Home</span>
-            
-          </a>
-        </li>
-
-        
-        
-      
-
-        <li class="nav-item">
-          <a class="nav-link" href="/#Publications" data-target="#Publications">
-            
-            <span>Publications</span>
-            
-          </a>
-        </li>
-
-          <li class="nav-item">
-          <a class="nav-link" href="/#professional-services" data-target="#Services">
-            
-            <span>Services</span>
-            
-          </a>
-        </li>
-
-
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/cv/cv_Ningfei_Wang.pdf" data-target="/CV">
-            
-            <span>CV </span>
-            
-          </a>
-        </li>
-        
-        
-
-      
-
-        
-
-        
-      </ul>
-
-    </div>
-  </div>
-</nav>
-
-
-
-<span id="homepage" style="display: none"></span>
-
-
-  
-
-
-
-
-
-  
-  
-  
-  <section id="about" class="home-section">
-    <div class="container">
-      
-
-
-
-<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-telephone person-address">
-  <div class="col-12 col-lg-4">
-    <div id="profile">
-
-      
-      <img class="portrait" src="/img/photo.jpg" itemprop="image" alt="Avatar">
-      
-
-      <div class="portrait-title">
-        <h2 itemprop="name">Ningfei Wang</h2>
-        <h3 itemprop="jobTitle">Ph.D. Candidate</h3>
-
-        
-        
-
-        
-        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-          
-          <span itemprop="name">	
-            University of California - Irvine</span>
-          
-        </h3>
-        
-      </div>
-
-      <link itemprop="url" href="https://ningfeiwang.github.io/">
-
-      <ul class="network-icon" aria-hidden="true">
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-        <li>
-          <a itemprop="sameAs" href="mailto:ningfei.wang@uci.edu" >
-            <i class="fas fa-envelope big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-          
-        
-        <li>
-          <a itemprop="sameAs" href="https://github.com/ningfeiwang" target="_blank" rel="noopener">
-            <i class="fab fa-github big-icon"></i>
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        
-        
-        
-        
-        
-          
-        
-        <li>
-          <a itemprop="sameAs" href="https://www.linkedin.com/in/ningfei-wang-569a91156/" target="_blank" rel="noopener">
-            <i class="fab fa-linkedin big-icon"></i>
-          </a>
-        </li>
-
-        
-        <li>
-          <a href="https://scholar.google.com/citations?user=RB6wfIsAAAAJ&hl=en" target="_blank" rel="noopener">
-            <i class="ai ai-google-scholar big-icon"></i>
-          </a>
-        </li>
-        
-      
-        
-      </ul>
-
-    </div>
-  </div>
-  <div class="col-12 col-lg-8" itemprop="description">
-
-    
-
-<h1 id="about-me">About Me</h1>
-
-<p> I am a fourth-year Ph.D. candidate in Department of Computer Science at <a href="https://uci.edu/">University of California, Irvine </a> advised by  <a href="https://www.ics.uci.edu/~alfchen/">Prof. Alfred Chen</a>. My research interests are autonomous cyber-physical systems security and machine learning security, especially in the context of autonomous driving systems</a>.</p>
-
-<p> Before joining UCI, I received my M.S. and B.E. degree from <a href="https://www1.lehigh.edu/">Lehigh University</a> and <a href="http://www.bupt.edu.cn/">Beijing University of Posts and Telecommunications</a>. During my time at Lehigh University, I was fortunate to work with <a href="https://alps-lab.github.io/">Prof. Ting Wang</a>, <a href="http://yinzhicao.org/">Prof. Yinzhi Cao</a>, and <a href="http://www.cse.lehigh.edu/~chuah/">Prof. Mooi Choo Chuah</a>.</p>
-
-
-    <div class="row">
-
-      
-      <!-- <div class="col-md-5">
-        <h3>Interests</h3>
-        <ul class="ul-interests">
-          
-          <li>Autonomous Cyber-Physical Systems Security </li>
-          
-          <li>Machine Learning Security</li>
-
-          
-        </ul>
-      </div> -->
-      
-
-      
-      <div class="col-md-15">
-        <h3>Education</h3>
-        <ul class="ul-edu fa-ul">
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">Doctor of Philosophy (Ph.D.) in Computer Science, 2019 - Present</p>
-              <p class="institution">University of California, Irvine</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">Master of Science (M.S.) in Computer Science, 2017 - 2019</p>
-              <p class="institution">Lehigh University</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">Bachelor of Engineering (B.E.) in Information Engineering, 2013 - 2017</p>
-              <p class="institution">Beijing University of Posts and Telecommunications</p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
-      
-
-    </div>
-  </div>
-</div>
-
-    </div>
-  </section>
-  
-
-  <section id="Publication" class="home-section">
-    <div class="container">
-      <h1 id="Publications">Publications</h1>
-      <p>* denotes equal contribution</p>
-
-      <p>
-        <h2 id="Preprint"><b>Preprint</b></h2>
-     <ul>
-        <li><p>
-    <i>[arXiv'22] SoK: On the Semantic AI Security in Autonomous Driving</i><!-- </a> --><br>
-    Junjie Shen, <b>Ningfei Wang</b>, Ziwen Wan, Yunpeng Luo, Takami Sato, Zhisheng Hu, Xinyang Zhang, Shengjian Guo, Zhenyu Zhong, Kang Li, Ziming Zhao, Chunming Qiao, Qi Alfred Chen<br>
-    arXiv:2203.05314 2022 <br>
-
-    [<a href="https://arxiv.org/abs/2203.05314">Paper</a>]  [<a href="https://sites.google.com/view/cav-sec/pass">Website</a>]
-    <br>
-    </p>
-    </li>
-      </ul>
-
-
-
-      <p>
-        <h2 id="Conference"><b>Conference</b></h2>
-      <!-- <font size="6.3"><b>Conference</b></font> -->
-
-
-      <ul>
-        <li><p>
-    <i>[IEEE S&P'21] Invisible for both Camera and LiDAR: Security of Multi-Sensor Fusion based Perception in Autonomous Driving Under Physical-World Attacks</i><!-- </a> --><br>
-    <b>Ningfei Wang</b><sup>*</sup>, Yulong Cao<sup>*</sup>, Chaowei Xiao<sup>*</sup>, Dawei Yang<sup>*</sup>, Jin Fang, Ruigang Yang, Qi Alfred Chen, Mingyan Liu, Bo Li<br>
-    The 42nd IEEE Symposium on Security and Privacy (<a href="https://www.ieee-security.org/TC/SP2021/">IEEE S&P 2021</a>)  <br>
-
-    [<a href="./paper/msf-adv.pdf">Paper</a>] [<a href="https://www.youtube.com/watch?v=Bv6MY-FVnGU">Preview</a>] [<a href="https://www.youtube.com/watch?v=KRQvdcjrNMM">Talk</a>] [<a href="./slides/msf-adv_ningfei.pdf">Slides</a>] [<a href="https://sites.google.com/view/cav-sec/msf-adv">Website</a>]
-    <br>
-    </p>
-    </li>
-      </ul>
-
-
-      <ul>
-        <li><p>
-    <i>[USENIX Security'21] Dirty Road Can Attack: Security of Deep Learning based Automated LaneCentering under Physical-World Attack</i><!-- </a> --><br>
-    Takami Sato<sup>*</sup>, Junjie Shen<sup>*</sup>, <b>Ningfei Wang</b>, Yunhan Jack Jia, Xue Lin, Qi Alfred Chen<br>
-    The 30th USENIX Security Symposium, Winter Quarter (<a href="https://www.usenix.org/conference/usenixsecurity21">USENIX Security 2021</a>)  <br>
-
-     [<a href="https://www.usenix.org/conference/usenixsecurity21/presentation/sato">Paper</a>] [<a href="https://arxiv.org/abs/2009.06701">Extended Version</a>] [<a href="https://sites.google.com/view/cav-sec/drp-attack">Website</a>]
-    <br>
-    </p>
-    </li>
-      </ul>
-
-      
-
-
-      <ul>
-        <li><p>
-    <i>[USENIX Security'20] Interpretable Deep Learning under Fire</i><!-- </a> --><br>
-    Xinyang Zhang, <b>Ningfei Wang</b>, Hua Shen, Shouling Ji, Xiapu Luo, Ting Wang<br>
-    The 29th USENIX Security Symposium, Spring Quarter (<a href="https://www.usenix.org/conference/usenixsecurity20">USENIX Security 2020</a>)  <br>
-    [<a href="https://www.usenix.org/conference/usenixsecurity20/presentation/zhang-xinyang">Paper</a>]<br>
-    </p>
-    </li>
-      </ul>
-    
-      
-      <ul>
-        <li><p>
-    <i>[USENIX Security'19] Rendered Private: Making GLSL Execution Uniform to Prevent WebGL-based Browser Fingerprinting</i><!-- </a> --><br>
-    Shujiang Wu, Song Li, Yinzhi Cao, <b>Ningfei Wang</b><br>
-    The 28th USENIX Security Symposium, Fall Quarter (<a href="https://www.usenix.org/conference/usenixsecurity19">USENIX Security 2019</a>) <br>
-    [<a href="./paper/unigl_usenix_security_2019.pdf">Paper</a>] <br>
-    </p>
-    </li>
-      </ul>
-    
-    </p>
-    <p>
-
-      <h2 id="Workshop and Poster"><b>Workshop and Poster</b></h2>
-
-
-      <ul>
-        <li><p>
-      <i>[AutoSec'22] WIP: Infrastructure-Aided Defense for Autonomous Driving Systems: Opportunities and Challenges</i><!-- </a> --><br>
-      Yunpeng Luo, <b>Ningfei Wang</b>, Bo Yu, Shaoshan Liu, Qi Alfred Chen<br>
-      The 4th International Workshop on Automotive and Autonomous Vehicle Security 
-      (<a href="https://www.ndss-symposium.org/ndss2022/cfp-autosec-workshop/">AutoSec 2022</a>) <br>
-      [<a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-330/">Paper</a>] <br></p>
-      </li>
-      </ul>
-
-      <ul>
-        <li><p>
-      <i>[AutoSec'21] WIP: Deployability Improvement, Stealthiness User Study, and Safety Impact Assessment on Real Vehicle for Dirty Road Patch Attack</i><!-- </a> --><br>
-      Takami Sato<sup>*</sup>, Junjie Shen<sup>*</sup>, <b>Ningfei Wang</b>, Yunhan Jack Jia, Xue Lin, Qi Alfred Chen<br>
-      The 3rd International Workshop on Automotive and Autonomous Vehicle Security 
-      (<a href="https://www.ndss-symposium.org/ndss2021/cfp-autosec-workshop/">AutoSec 2021</a>) <br>
-      [<a href="https://www.ndss-symposium.org/wp-content/uploads/autosec2021_23027_paper.pdf">Paper</a>] <br></p>
-      </li>
-      </ul>
-
-      <!-- <ul>
-        <li><p>
-    <i>Demo: Security of Camera-based Perception for Autonomous Driving under Adversarial Attack</i><br>
-    Christopher DiPalma, <b>Ningfei Wang</b>, Takami Sato, Qi Alfred Chen<br>
-
-    The 3rd International Workshop on Automotive and Autonomous Vehicle Security 
-      (<a href="https://www.ndss-symposium.org/ndss2021/cfp-autosec-workshop/">AutoSec 2021</a>) [<a href="https://www.ndss-symposium.org/wp-content/uploads/autosec2021_23018_paper.pdf">Paper</a>] [<a href="https://sites.google.com/uci.edu/ad-camera-adv-attack/">Website</a>]<br></p>
-    </li>
-      </ul> -->
-
-      <!-- <ul>
-        <li><p>
-    <i>Demo: Security of Deep Learning based Automated Lane Centering under Physical-World Attack</i><br>
-    Takami Sato<sup>*</sup>, Junjie Shen<sup>*</sup>, <b>Ningfei Wang</b>, Yunhan Jack Jia, Xue Lin, Qi Alfred Chen<br>
-    The 3rd International Workshop on Automotive and Autonomous Vehicle Security 
-      (<a href="https://www.ndss-symposium.org/ndss2021/cfp-autosec-workshop/">AutoSec 2021</a>)[<a href="https://www.ndss-symposium.org/wp-content/uploads/autosec2021_23026_paper.pdf">Paper</a>]<br></p>
-    </li>
-      </ul> -->
-
-        <ul>
-          <li><p>
-      <i>[MLSys'20] Demonstration: 3D Adversarial Object against MSF-based Perception in Autonomous Driving</i><!-- </a> --><br>
-      <b>Ningfei Wang</b><sup>*</sup>, Yulong Cao<sup>*</sup>, Chaowei Xiao<sup>*</sup>, Dawei Yang<sup>*</sup>, Jin Fang, Ruigang Yang, Qi Alfred Chen, Mingyan Liu, Bo Li<br>
-      The 3rd Conference on Machine Learning and Systems (MLSys 2020) Demonstration Track  <br>
-      [<a href="./paper/MLsys_demo.pdf">Demonstration</a>] [<a href="./paper/MLsys_poster.pdf">Poster</a>]<br></p>
-      </li>
-        </ul>
-
-
-        <ul>
-          <li><p>
-      <i>[NDSS'20] Poster: Security of Deep Learning based Lane Keeping Assistance System under Physical-World Adversarial Attack</i><!-- </a> --><br>
-      Takami Sato<sup>*</sup>, Junjie Shen<sup>*</sup>, <b>Ningfei Wang</b>, Yunhan Jack Jia, Xue Lin and Qi Alfred Chen<br>
-      Network and Distributed System Security Symposium (NDSS 2020) Poster session, 2020 <br>
-      [<a href="./paper/NDSS2020posters_paper.pdf">Poster</a>]<br>
-      <b>Best Technical Poster Award</b></p>
-      </li>
-        </ul>
-
-
-          <ul>
-          <li><p>
-      <i>[AISec'18] Integration of Static and Dynamic Code Stylometry Analysis for Programmer De-anonymization</i><!-- </a> --><br>
-      <b>Ningfei Wang</b>, Shouling Ji, Ting Wang<br>
-      The 11th ACM Workshop on Artificial Intelligence and Security (<a href="http://aisec2018.icsi.berkeley.edu/aisec2018/index.html">AISec 2018</a>) <br>
-      [<a href="./paper/sundae_aisec_2018.pdf">Paper</a>]<br>
-      <b>Best Paper Award</b></p>
-      </li>
-        </ul>
-      </p>
-
-  </section>
-
-
-
-
-
-      
-      </div>
-
-<section id="professional-services" class="home-section">
-    <div class="container">
-      <h1 id="professional-services">Professional Services</h1>
-
-  <!-- <h1 id="academic-services">Academic Services</h1> -->
-  <ul>
-
-   <li><b>Program Committee</b></li>
-   <ul class="square">
-    <li>USENIX Security 2023 (AE): 32nd USENIX Security Symposium Artifact Evaluation (AE)</li>
-    <li>KDD 2023: 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</li>
-    <li>IJCAI 2023: 32nd International Joint Conference on Artificial Intelligence</li>
-   </ul>
-   <li><b>Reviewer</b></li>
-    <ul class="square">
-    <li>ICML 2023: Fortieth International Conference on Machine Learning</li>
-    <li>ICLR 2023: Eleventh International Conference on Learning Representations</li>
-    <li>NeurIPS 2022: Thirty-sixth Conference on Neural Information Processing Systems</li>
-    <li>JSS 2022: The Journal of Systems & Software</li>
-    <li>TOPS 2022: ACM Transactions on Privacy and Security</li>
-   </ul>
-
-   <li><b>Organizer</b></li>
-   <ul class="square">
-    <li>Autonomous Driving CTF at DEF CON 30 (AutoDriving CTF), Las Vegas, NV, 2022</li>
-   </ul>
-
-  
-  </ul>
-  </div>
-
-  </section>
-
-
-
-
-
-
-  
-  
-
-  
-  
-  
-
-      
-
-
-
-
-
-<!-- 
-
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
-
-    <h1>Projects</h1>
-
-    
-
-  </div>
-  <div class="col-xs-12 col-md-8">
-
-
-
-    
-
-    
-
-    <div class="row isotope projects-container js-layout-masonry ">
-      
-        
-        
-        
-          
-          
-        
-        
-           -->
-
-
-
-
-
-<!-- 
-
-
-<div class="col-12 col-md-6 col-lg-4 project-item isotope-item js-id-Graphics">
-  <div class="card">
-    
-    
-    <a href="https://github.com/ningfeiwang/Interactive-Rubik-s-Cube-Modeling" target="_blank" rel="noopener" class="card-image hover-overlay">
-      <img src="/project/rubiks-cube/featured_hu841c8991a3ab164aa9d4202e4d9f0dba_384725_550x0_resize_q90_box_2.png" alt="" class="img-responsive">
-    </a>
-    
-    <div class="card-text">
-      <h4><a href="https://github.com/ningfeiwang/Interactive-Rubik-s-Cube-Modeling" target="_blank" rel="noopener">Interactive Rubik&#39;s Cube Modeling</a></h4>
-      <div class="card-desription">
-        <p>Model an interactive 3x3 Rubik’s cube based on OpenGL, which can do every thing you think a real Rubik&rsquo;s Cube can do.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-        
-      
-        
-        
-        
-          
-          
-        
-        
-          
-
-
-
-
-
-
-
-
-<div class="col-12 col-md-6 col-lg-4 project-item isotope-item js-id-Graphics">
-  <div class="card">
-    
-    
-    <a href="https://github.com/ningfeiwang/Smooth-Feature-Lines-Extraction" target="_blank" rel="noopener" class="card-image hover-overlay">
-      <img src="/project/smooth-feature-line/featured_hub16639633213ae9efb3cb42a3864cfb0_116701_550x0_resize_q90_box.jpg" alt="" class="img-responsive">
-    </a>
-    
-    <div class="card-text">
-      <h4><a href="https://github.com/ningfeiwang/Smooth-Feature-Lines-Extraction" target="_blank" rel="noopener">Smooth Feature Lines on Surface Meshes</a></h4>
-      <div class="card-desription">
-        <p>Based on the paper by K. Hildebrandt, K. Polthier and M. Wardetzky. This paper introduces a way to detect the feature lines on a mesh based on utilizing discrete differential operators on piecewise linear meshes.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-        
-      
-    </div>
-
-  </div>
-</div>
-
-    </div>
-  </section> -->
-  
-
-
-
-<div class="container">
-  <footer class="site-footer">
-  
-
-  <p class="powered-by">
-    &copy; 2021 Ningfei Wang &middot; 
-
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-
-    
-    <span class="float-right" aria-hidden="true">
-      <a href="#" id="back_to_top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
-    
-  </p>
-</footer>
-
-</div>
-
-
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-
-     <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159210864-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-159210864-3');
-  </script>
-    
-
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
-
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
-        
-      
-
-      
-      
-    
-
-    
-    
-
-    
-    
-    
-
-    
-    
-    <script>hljs.initHighlightingOnLoad();</script>
-    
-
-    
-    
     <script>
-      const search_index_filename = "/index.json";
-      const i18n = {
-        'placeholder': "Search...",
-        'results': "Search Results",
-        'no_results': "No results found"
-      };
-      const content_type = {
-        'post': "Posts",
-        'project': "Projects",
-        'publication' : "Publications",
-        'talk' : "Talks"
-        };
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XHX6X2PK9R');
     </script>
     
+    
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ningfei Wang</h1>
+        <img src="images/profile_photo.jpg" alt="ningfei_homepage">
+        <body><p>
+        <a href="#about-me" style="font-size: 20px;">About Me</a><br>
+        <a href="#Publications" style="font-size: 20px;">Publications</a><br>
+        <a href="#Teaching" style="font-size: 20px;">Teaching</a><br>
+        <a href="#works" style="font-size: 20px;">Work Experience</a><br>
+        <a href="#services" style="font-size: 20px;">Professional Services</a><br>
+        <a href="./cv/cv_Ningfei_Wang.pdf" style="font-size: 20px;">CV</a>
 
-    
-    
+        
+<!-- 
 
-    
-    
-    <script id="search-hit-fuse-template" type="text/x-template">
-      <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
-        </div>
-      </div>
-      </div>
-    </script>
-    
 
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    
+        Ph.D. Candidate<br>
+        Department of Computer Science<br>
+        University of California, Irvine<br>
+        </p></body>
+        <body><p>
+        ICS1 418, Inner Ring Rd<br>
+        Irvine, CA 92617<br>
+        ningfei.wang [at] uci [dot] edu
+        </p></body> -->
+        <body><p>
+          <a href="https://www.linkedin.com/in/ningfei-wang-569a91156/"><i class="fab fa-linkedin-in fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
+          <a href="https://github.com/ningfeiwang"><i class="fab fa-github fa-2x"></i></a>&nbsp;&nbsp;&nbsp;
+          <a href="https://scholar.google.com/citations?user=RB6wfIsAAAAJ&hl=en"><i class="ai ai-google-scholar ai-2x"></i></a>&nbsp;&nbsp;&nbsp;
+          <a href="https://scholar.google.com/citations?user=RB6wfIsAAAAJ&hl=en"><i class="fab fa-file"></i></a>
+          </p></body>
+      </header>
+      <section>
 
-    
-    
 
-    
-    
-    
-    
-    
-    
-    
-    
-    <script src="/js/academic.min.2861db6bcf2db4b5eade32c795453e47.js"></script>
+        <h2 id="about-me">About Me</h2>
 
-    
-    
+          <p>I am a fourth-year Ph.D. candidate in Department of Computer Science at <a href="https://uci.edu/">University of California, Irvine </a> advised by  <a href="https://www.ics.uci.edu/~alfchen/">Prof. Alfred Chen</a>. My research interests are autonomous cyber-physical systems security and machine learning security, especially in the context of autonomous driving systems.
 
+          <p> Before joining UCI, I received my M.S. and B.E. degree from <a href="https://www1.lehigh.edu/">Lehigh University</a> and <a href="http://www.bupt.edu.cn/">Beijing University of Posts and Telecommunications</a>. During my time at Lehigh University, I was fortunate to work with <a href="https://alps-lab.github.io/">Prof. Ting Wang</a>, <a href="http://yinzhicao.org/">Prof. Yinzhi Cao</a>, and <a href="http://www.cse.lehigh.edu/~chuah/">Prof. Mooi Choo Chuah</a>.</p>
+
+        
+        <h2 id="Publications">Publications</h2>
+        <p>* denotes equal contribution</p>
+
+        <h3>Preprint</h3>
+        <ul>
+        <li>
+          <b>[arXiv'22] SoK: On the Semantic AI Security in Autonomous Driving</b>. <br>
+          Junjie Shen, <b>Ningfei Wang</b>, Ziwen Wan, Yunpeng Luo, Takami Sato, Zhisheng Hu, Xinyang Zhang, Shengjian Guo, Zhenyu Zhong, Kang Li, Ziming Zhao, Chunming Qiao, Qi Alfred Chen <br>
+          arXiv:2203.05314 2022 <br>
+          [<a href="https://arxiv.org/abs/2203.05314">Paper arXiv</a>]  [<a href="https://sites.google.com/view/cav-sec/pass">Website</a>]
+        </li>
+      </ul>
+
+        <h3>Conference and Workshop</h3>
+          <ul>
+            <div style="text-indent: -1em;"> <h4>2023</h4></div>
+          <li>
+            <b>[ICCV'23] Does Physical Adversarial Example Really Matter to Autonomous Driving? Towards System-Level Effect of Adversarial Object Evasion Attack</b> <br>
+            <b>Ningfei Wang</b>, Yunpeng Luo, Takami Sato, Kaidi Xu, Qi Alfred Chen<br>
+            International Conference on Computer Vision 2023
+           (<a href="https://iccv2023.thecvf.com/">ICCV 2023</a>) <br>
+           [<a>Paper</a>] 
+           <br>
+          </li>
+            
+          <li>
+            <b>[VehicleSec'23] WIP: Towards the Practicality of the Adversarial
+            Attack on Object Tracking in Autonomous Driving</b><br>
+            Chen Ma, <b>Ningfei Wang</b>, Qi Alfred Chen, Chao Shen<br>
+            Inaugural Symposium on Vehicle Security and Privacy 2023
+            (<a href="https://www.ndss-symposium.org/ndss2023/co-located-events/vehiclesec/">VehicleSec 2022</a>) <br>
+            [<a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-387/">Paper</a>] <br>
+          </li>
+          <br>
+          <div style="text-indent: -1em;"> <h4>2022</h4></div>
+          <li>
+            <b>[AutoSec'22] WIP: Infrastructure-Aided Defense for Autonomous Driving Systems: Opportunities and Challenges</b><!-- </a> --><br>
+            Yunpeng Luo, <b>Ningfei Wang</b>, Bo Yu, Shaoshan Liu, Qi Alfred Chen<br>
+            The 4th International Workshop on Automotive and Autonomous Vehicle Security 
+            (<a href="https://www.ndss-symposium.org/ndss2022/cfp-autosec-workshop/">AutoSec 2022</a>) <br>
+            [<a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-330/">Paper</a>] <br>
+          </li>
+          <br>
+          <div style="text-indent: -1em;"> <h4>2021</h4></div>
+
+          <li>
+            <b>[IEEE S&P'21] Invisible for both Camera and LiDAR: Security of Multi-Sensor Fusion based Perception in Autonomous Driving Under Physical-World Attacks</b><!-- </a> --><br>
+            Yulong Cao<sup>*</sup>, <b>Ningfei Wang</b><sup>*</sup>, Chaowei Xiao<sup>*</sup>, Dawei Yang<sup>*</sup>, Jin Fang, Ruigang Yang, Qi Alfred Chen, Mingyan Liu, Bo Li<br>
+            The 42nd IEEE Symposium on Security and Privacy (<a href="https://www.ieee-security.org/TC/SP2021/">IEEE S&P 2021</a>)  <br>
+
+            [<a href="https://www.computer.org/csdl/proceedings-article/sp/2021/893400b302/1t0x9btzenu">Paper</a>] [<a href="https://arxiv.org/abs/2106.09249">Paper arXiv</a>] [<a href="https://www.youtube.com/watch?v=Bv6MY-FVnGU">Preview</a>] [<a href="https://www.youtube.com/watch?v=KRQvdcjrNMM">Talk</a>] [<a href="./slides/msf-adv_ningfei.pdf">Slides</a>] [<a href="https://sites.google.com/view/cav-sec/msf-adv">Website</a>]
+            <br>
+          </li>
+
+          <li>
+            <b>[USENIX Security'21] Dirty Road Can Attack: Security of Deep Learning based Automated LaneCentering under Physical-World Attack</b><!-- </a> --><br>
+            Takami Sato<sup>*</sup>, Junjie Shen<sup>*</sup>, <b>Ningfei Wang</b>, Yunhan Jack Jia, Xue Lin, Qi Alfred Chen<br>
+            The 30th USENIX Security Symposium, Winter Quarter (<a href="https://www.usenix.org/conference/usenixsecurity21">USENIX Security 2021</a>)  <br>
+
+            [<a href="https://www.usenix.org/conference/usenixsecurity21/presentation/sato">Paper</a>] [<a href="https://arxiv.org/abs/2009.06701">Extended Version</a>] [<a href="https://sites.google.com/view/cav-sec/drp-attack">Website</a>]
+            <br>
+          </li>
+          
+          <li>
+            <b>[AutoSec'21] WIP: Deployability Improvement, Stealthiness User Study, and Safety Impact Assessment on Real Vehicle for Dirty Road Patch Attack</b><!-- </a> --><br>
+            Takami Sato<sup>*</sup>, Junjie Shen<sup>*</sup>, <b>Ningfei Wang</b>, Yunhan Jack Jia, Xue Lin, Qi Alfred Chen<br>
+            The 3rd International Workshop on Automotive and Autonomous Vehicle Security 
+            (<a href="https://www.ndss-symposium.org/ndss2021/cfp-autosec-workshop/">AutoSec 2021</a>) <br>
+            [<a href="https://www.ndss-symposium.org/wp-content/uploads/autosec2021_23027_paper.pdf">Paper</a>] <br>
+          </li>
+          <br>
+          <div style="text-indent: -1em;"> <h4>2020</h4></div>
+          <li>
+            <b>[USENIX Security'20] Interpretable Deep Learning under Fire</b><!-- </a> --><br>
+            Xinyang Zhang, <b>Ningfei Wang</b>, Hua Shen, Shouling Ji, Xiapu Luo, Ting Wang<br>
+            The 29th USENIX Security Symposium, Spring Quarter (<a href="https://www.usenix.org/conference/usenixsecurity20">USENIX Security 2020</a>)  <br>
+            [<a href="https://www.usenix.org/conference/usenixsecurity20/presentation/zhang-xinyang">Paper</a>]<br>
+          </li>
+          <br>
+          <div style="text-indent: -1em;"> <h4>2019</h4></div>
+          <li>
+            <b>[USENIX Security'19] Rendered Private: Making GLSL Execution Uniform to Prevent WebGL-based Browser Fingerprinting</b><!-- </a> --><br>
+            Shujiang Wu, Song Li, Yinzhi Cao, <b>Ningfei Wang</b><br>
+            The 28th USENIX Security Symposium, Fall Quarter (<a href="https://www.usenix.org/conference/usenixsecurity19">USENIX Security 2019</a>) <br>
+            [<a href="https://www.usenix.org/conference/usenixsecurity19/presentation/wu">Paper</a>] <br>
+          </li>
+          <br>
+          <div style="text-indent: -1em;"> <h4>2018</h4></div>
+          <li>
+            <b>[AISec'18] Integration of Static and Dynamic Code Stylometry Analysis for Programmer De-anonymization</b><!-- </a> --><br>
+            <b>Ningfei Wang</b>, Shouling Ji, Ting Wang<br>
+            The 11th ACM Workshop on Artificial Intelligence and Security (<a href="http://aisec2018.icsi.berkeley.edu/aisec2018/index.html">AISec 2018</a>) <br>
+            <b>Best Paper Award</b> <br>
+            [<a href="https://dl.acm.org/doi/10.1145/3270101.3270110">Paper</a>]<br>
+            
+          </li>
+
+        </ul>
+
+         <h3>Selected Poster and Demo</h3>
+          <ul>
+          <li>
+            <b>[CCS'22] Poster: On the System-Level Effectiveness of Physical Object-Hiding Adversarial Attack in Autonomous Driving</b><!-- </a> --><br>
+            <b>Ningfei Wang</b><sup>*</sup>, Yunpeng Luo, Takami Sato, Kaidi Xu, Qi Alfred Chen<br>
+            The ACM Conference on Computer and Communications Security (<a href="https://www.sigsac.org/ccs/CCS2022/">CCS 2022</a>) <br>
+            [<a href="https://dl.acm.org/doi/10.1145/3548606.3563539">Poster</a>]
+          </li>
+          
+          <li>
+            <b>[MLSys'20] Demonstration: 3D Adversarial Object against MSF-based Perception in Autonomous Driving</b><!-- </a> --><br>
+            Yulong Cao<sup>*</sup>, <b>Ningfei Wang</b><sup>*</sup>, Chaowei Xiao<sup>*</sup>, Dawei Yang<sup>*</sup>, Jin Fang, Ruigang Yang, Qi Alfred Chen, Mingyan Liu, Bo Li<br>
+            The 3rd Conference on Machine Learning and Systems (MLSys 2020) Demonstration Track  <br>
+            [<a href="./paper/MLsys_demo.pdf">Demonstration</a>] [<a href="./paper/MLsys_poster.pdf">Poster</a>]<br>
+          </li>
+          
+          <li>
+            <b>[NDSS'20] Poster: Security of Deep Learning based Lane Keeping Assistance System under Physical-World Adversarial Attack</b><!-- </a> --><br>
+            Takami Sato<sup>*</sup>, Junjie Shen<sup>*</sup>, <b>Ningfei Wang</b>, Yunhan Jack Jia, Xue Lin and Qi Alfred Chen<br>
+            Network and Distributed System Security Symposium (NDSS 2020) Poster session, 2020 <br>
+            <b>Best Technical Poster Award</b><br>
+            [<a href="https://www.ndss-symposium.org/wp-content/uploads/2020/02/NDSS2020posters_paper_15.pdf">Poster</a>]<br>
+          
+          </li>
+        </ul>
+
+        <h2 id="Teaching">Teaching</h2>
+          <ul>
+          <li>
+            Teaching Assistant: COMPSCI 134  Computer and Network Security, 2022 Fall
+          </li>
+          <li>Teaching Assistant: COMPSCI 134  Computer and Network Security, 2021 Fall</li>
+        </ul>
+
+        <h2 id="works">Work Experience</h2>
+          <ul>
+          <li>
+            Applied Scientist Intern at Amazon A9, Palo Alto, CA (2023), working with Yupin Huang and Han Cheng.
+          </li>
+          <li>
+            Machine Learning Intern at Cheetah Mobile, China (2016), working with Hang Xiao.
+          </li>
+        </ul>
+
+        <h2 id="services">Professional Services</h3>
+          <ul>
+            <div style="text-indent: -2em;"> <h4>Program Committee</h4></div>
+             <li>MSN: The 19th International Conference on Mobility, Sensing and Networking, 2023</li>
+             <li>USENIX Security (AE): 32nd USENIX Security Symposium Artifact Evaluation (AE), 2023</li>
+             <li>KDD: 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, 2023</li>
+             <li>IJCAI: 32nd International Joint Conference on Artificial Intelligence, 2023</li>
+            <div style="text-indent: -2em;"> <h4>Reviewer</h4></div>
+               <li>SecureComm: International Conference on Security and Privacy in Communication Networks, 2023</li>
+               <li>NeurIPS: Conference on Neural Information Processing Systems, 2022, 2023</li>
+               <li>ICML: Fortieth International Conference on Machine Learning, 2023</li>
+               <li>ICLR: Eleventh International Conference on Learning Representations, 2023</li>
+               <li>JSS: The Journal of Systems & Software, 2022</li>
+
+              <div style="text-indent: -2em;"> <h4>Organizer</h4></div>
+              
+                <li>Autonomous Driving CTF at DEF CON 30 (AutoDriving CTF), Las Vegas, NV, 2022</li>
+            </ul>
+
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
   </body>
 </html>
-
-
