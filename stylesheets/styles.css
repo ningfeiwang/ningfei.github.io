@@ -274,3 +274,13 @@ footer {
   }
 }
 
+.clustrmaps-wrapper {
+  width: 40%; /* Adjust as desired for width */
+  margin: 0 auto; /* To center the map */
+  overflow: hidden; /* To hide any overflow, just in case */
+}
+
+.clustrmaps-wrapper iframe {
+  width: 100%; /* Makes sure iframe fills its container */
+  height: auto; /* Keeps the aspect ratio */
+}
